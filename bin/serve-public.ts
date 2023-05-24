@@ -1,6 +1,6 @@
 import program from "commander";
 import * as url from 'url';
-import { servePublic } from "../src/serve-public";
+import { servePublic } from "../src/serve-public.js";
 
 // @ts-ignore
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));

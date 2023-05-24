@@ -1,6 +1,10 @@
 import program from "commander";
 import express from "express";
 import { tunnelmole } from "tunnelmole";
+import * as url from 'url';
+
+// @ts-ignore
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
 process.title = "serve-public";
 
@@ -24,6 +28,7 @@ const domain = options.domain ?? undefined;
 const run = async function () {
     const app = express();
     app.use(express.static(path));
+    console.info(`Local server listening on http://localhost:${port}`);
     await tunnelmole({
         port,
         domain

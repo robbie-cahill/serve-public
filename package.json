@@ -2,7 +2,8 @@
   "name": "serve-public",
   "version": "1.0.0",
   "description": "Serve your static site or SPA with a Public URL (React/Vue/Angular/Hugo etc)",
-  "main": "dist/bin/serve-public.js",
+  "main": "dist/serve-public.js",
+  "type": "module",
   "scripts": {
     "prepare": "npm run build",
     "build": "tsc -p ./",
@@ -14,7 +15,8 @@
   "dependencies": {
     "commander": "^5.1.0",
     "express": "^4.18.2",
-    "tunnelmole": "^2.1.10"
+    "tunnelmole": "^2.1.10",
+    "typescript": "^5.0.4"
   },
   "devDependencies": {
     "eslint": "^8.41.0"

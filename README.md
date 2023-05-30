@@ -32,6 +32,11 @@ https://cnrsqd-ip-157-211-241-249.tunnelmole.com is forwarding to localhost:3000
 
 These URLs are random and will be regenerated each time you launch `serve-public`.
 
+##### Here's what it looks like if you are sharing a plain folder
+![Sharing a folder](docs/img/serve-folder.png)
+
+##### Or a website
+![Sharing a website](docs/img/serve-website.png)
 
 #### Getting a custom subdomain, or a domain that does not change
 Custom subdomains that do not change require a paid subscription from [Tunnelmole](https://dashboard.tunnelmole.com?utm_source=servePublicGithub), or self hosting your own [Tunnelmole Service](https://github.com/robbie-cahill/tunnelmole-service/).

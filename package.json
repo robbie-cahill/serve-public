@@ -1,7 +1,7 @@
 {
   "name": "serve-public",
   "version": "1.0.0",
-  "description": "Serve your static site or SPA with a Public URL (React/Vue/Angular/Hugo etc)",
+  "description": "Serve any folder with a Public URL",
   "main": "dist/bin/serve-public.js",
   "scripts": {
     "prepare": "npm run build",

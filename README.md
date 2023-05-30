@@ -26,16 +26,18 @@ If you are sharing a website, ensure you have a `index.html` file in your folder
 You'll see output like
 ```
 Local server listening on http://localhost:3000 # This is the port the server is listening to on localhost
-http://cnrsqd-ip-157-211-241-249.tunnelmole.com is forwarding to localhost:3000 # A public, plain HTTP url for your folder
-https://cnrsqd-ip-157-211-241-249.tunnelmole.com is forwarding to localhost:3000 # A public HTTPS url for your folder
+http://vsqaam-ip-157-211-241-249.tunnelmole.com is forwarding to localhost:3000 # A public, plain HTTP url for your folder
+https://vsqaam-ip-157-211-241-249.tunnelmole.com is forwarding to localhost:3000 # A public HTTPS url for your folder
 ```
 
 These URLs are random and will be regenerated each time you launch `serve-public`.
 
+By default the local port will be port `3000`. To change this, pass the `--port <port>` parameter. For example, `--port 1337` will make the port `1337`.
+
 ##### Here's what it looks like if you are sharing a plain folder
 ![Sharing a folder](docs/img/serve-folder.png)
 
-##### Or a website
+##### Or a website, with `index.html` placed in the folder
 ![Sharing a website](docs/img/serve-website.png)
 
 #### Getting a custom subdomain, or a domain that does not change
@@ -52,11 +54,14 @@ https://mysite.tunnelmole.com is forwarding to localhost:3000
 ```
 
 #### How it works
-`serve-public` uses [Tunnelmole](https://github.com/robbie-cahill/tunnelmole-client) under the hood to get the Public URLs. It then starts a simple [Express](https://expressjs.com/) server with a couple of middlewares that serve up static files and folder listings.
+`serve-public` uses [Tunnelmole](https://github.com/robbie-cahill/tunnelmole-client) as an `npm` dependency under the hood to get the Public URLs. It then starts a simple [Express](https://expressjs.com/) server with a couple of middlewares that serve up static files and folder listings.
 
 When you hit the public URL, the request is forwarded through the tunnelmole servers to your local client, then to the express server serving up your folder. If that was a bit of a mouthful, heres a diagram:
 ![How Tunnelmole Works](docs/img/how-tunnelmole-works.png)
 
+
+#### Serving dynamic content from your own server
+`serve-public` can't do this, but [Tunnelmole](https://github.com/robbie-cahill/tunnelmole-client) can get a Public URL for any server that you have running. You could use it to share a back end API or a dynamic PHP website for example.
 
 #### Contributing
 This is a community project and contributions are welcome. See our document on [Contributing](CONTRIBUTING.md) for more info.

@@ -1,7 +1,7 @@
 ### Serve Public
 Serve any folder on your device with a Public URL.
 
-You can share a folder, or serve up a static file website such as an SPA.
+You can share a folder, or serve up a static file website such as an SPA or React app.
 
 If you want to share an actual server running locally instead such as a PHP/NodeJS site or an API, try [Tunnelmole](https://github.com/robbie-cahill/tunnelmole-client).
 
@@ -52,6 +52,9 @@ https://mysite.tunnelmole.com is forwarding to localhost:3000
 When you hit the public URL, the request is forwarded through the tunnelmole servers to your local client, then to the express server serving up your folder. If that was a bit of a mouthful, heres a diagram:
 ![How Tunnelmole Works](docs/img/how-tunnelmole-works.png)
 
+
+#### License
+The code is MIT licensed, you can go ahead and use this in your own projects both open source and commercial.
 
 #### Contributing
 This is a community project and contributions are welcome. See our document on [Contributing](CONTRIBUTING.md) for more info.

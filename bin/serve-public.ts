@@ -3,8 +3,6 @@ import * as url from 'url';
 import { servePublic } from "../src/serve-public.js";
 
 // @ts-ignore
-const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
-
 process.title = "serve-public";
 
 program.name("serve-public")

@@ -1,5 +1,5 @@
 import express from "express";
-import { tunnelmole } from "tunnelmole";
+import tunnelmole from "tunnelmole/cjs";
 
 const servePublic = async function (port: number, path: string, domain?: string) {
     const app = express();

@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Serve your static site or SPA with a Public URL (React/Vue/Angular/Hugo etc)",
   "main": "dist/bin/serve-public.js",
-  "type": "module",
   "scripts": {
     "prepare": "npm run build",
     "build": "tsc -p ./",
     "watch": "tsc -p ./ -w",
+    "test": "jest",
     "lint": "eslint . --ext .ts"
   },
   "author": "",

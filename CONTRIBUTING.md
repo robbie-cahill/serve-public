@@ -1,6 +1,6 @@
-# Welcome to Tunnelmole contributing guide <!-- omit in toc -->
+# Welcome to the Serve Public contributing guide <!-- omit in toc -->
 
-Thank you for investing your time in contributing to Tunnelmole!
+Thank you for investing your time in contributing to Serve Public!
 
 Read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
@@ -11,11 +11,11 @@ This repo includes several things to enahnce your developer experience including
 
 ### Ways to Contribute
 Here are some different ways you can help
-- Help with testing Tunnelmole. Install the latest binary or build the latest source release and do your best to break it. If you're able to, create an issue.
+- Help with testing Serve Public. Install the latest binary or build the latest source release and do your best to break it. If you're able to, create an issue.
 - Creating documentation, cookbooks and guides. Just submit it to this repo under the `docs` folder in Markdown format (the folder is currently non-existant, so you can be the first to create it)
-- Spreading the word. As previously mentioned, there is no big company or marketing department. That leaves it up to you to help others by introducing them to Tunnelmole. Sharing Tunnelmole on social media sites and creating blog articles will help you look good and help other developers.
+- Spreading the word. As previously mentioned, there is no big company or marketing department. That leaves it up to you to help others by introducing them to Serve Public. Sharing Serve Public on social media sites and creating blog articles will help you look good and help other developers.
 - Fixing bugs
-- Making feature requests. To do this, create a GitHub issue and describe the feature you think Tunnelmole should have. We won't implement everything, but features people are interested in will be noted down. Of course, a good way to speed up the implementation of a feature is to implement it yourself and send in a pull request!
+- Making feature requests. To do this, create a GitHub issue and describe the feature you think Serve Public should have. We won't implement everything, but features people are interested in will be noted down. Of course, a good way to speed up the implementation of a feature is to implement it yourself and send in a pull request!
 - Implementing feature requests others have made and sending in pull requests
 
 For any code changes, you will need to fork this repo and submit a PR. If you've never done this before, GitHub has a very good guide [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
@@ -23,7 +23,7 @@ For any code changes, you will need to fork this repo and submit a PR. If you've
 ### Good Issue Descriptions
 When creating an issue, include clear steps to reproduce in addition to
 - Your Operating System
-- How you installed Tunnelmole. Are you using the precompiled binary or the latest source version from GitHub?
+- How you installed Serve Public. Are you using the precompiled binary or the latest source version from GitHub?
 - What did you expect to happen and what actually happened?
 
 ### Good feature requests
@@ -35,7 +35,7 @@ When creating a feature request, include the following
 ### Coding standards
 
 #### Functional Programming
-Tunnelmole uses functional programming. So its better to use functions, not classes.
+Serve Public uses functional programming. So its better to use functions, not classes.
 
 #### Single Responsibility Principle. 
 Functions should do one thing. If they do more than one thing, they should be split into separate functions.

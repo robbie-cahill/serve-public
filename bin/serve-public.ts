@@ -1,5 +1,4 @@
 import program from "commander";
-import * as url from 'url';
 import { servePublic } from "../src/serve-public.js";
 
 // @ts-ignore

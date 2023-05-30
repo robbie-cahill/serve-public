@@ -18,7 +18,7 @@ https://cnrsqd-ip-157-211-241-249.tunnelmole.com is forwarding to localhost:3000
 ```
 
 #### How it works
-`serve-public` uses [Tunnelmole](https://github.com/robbie-cahill/tunnelmole-client) under the hood to get the Public URLs. It then starts a simple [Express](https://expressjs.com/) server with a couple of middlewares.
+`serve-public` uses [Tunnelmole](https://github.com/robbie-cahill/tunnelmole-client) under the hood to get the Public URLs. It then starts a simple [Express](https://expressjs.com/) server with a couple of middlewares that serve up static files and folder listings.
 
 When you hit the public URL, the request is forwarded through the tunnelmole servers to your local client, then to the express server serving up your folder.
 

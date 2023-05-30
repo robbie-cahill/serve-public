@@ -7,7 +7,7 @@ If you want to share an actual server running locally instead such as a PHP/Node
 
 
 #### Prerequisites
-The only real external dependency is NodeJS 14+. Everything else will be taken care of by `npm`.
+The only real external dependency you need to be aware of is NodeJS 14+. Everything else will be taken care of by `npm` which comes bundled with NodeJS.
 
 #### Installation
 Once you have NodeJS installed, to install `serve-public` run the following.
@@ -21,7 +21,7 @@ Get a Public URL for any folder on your device, simply run the following
 serve-public --path </path/to/your/folder>
 ```
 
-If you are sharing a website, ensure you have a `index.html` file in your folder. Or, navigate manually to your HTML page.
+If you are sharing a website, ensure you have a `index.html` file in your folder. Or, navigate manually to your HTML page from the folder listing.
 
 You'll see output like
 ```
@@ -52,9 +52,6 @@ https://mysite.tunnelmole.com is forwarding to localhost:3000
 When you hit the public URL, the request is forwarded through the tunnelmole servers to your local client, then to the express server serving up your folder. If that was a bit of a mouthful, heres a diagram:
 ![How Tunnelmole Works](docs/img/how-tunnelmole-works.png)
 
-
-#### License
-The code is MIT licensed, you can go ahead and use this in your own projects both open source and commercial.
 
 #### Contributing
 This is a community project and contributions are welcome. See our document on [Contributing](CONTRIBUTING.md) for more info.
